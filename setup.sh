@@ -12,7 +12,7 @@ echo `service mysql status`
 
 echo '2.开始导入数据....'
 #导入数据
-mysql -u root -p $MYSQL_ROOT_PASSWORD < /mysql/schema.sql
+mysql -uroot -p$MYSQL_ROOT_PASSWORD < /mysql/schema.sql
 echo '3.导入数据完毕....'
 
 sleep 3

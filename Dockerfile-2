@@ -5,7 +5,7 @@ RUN tar --strip-components 1 -xzf /home/node.tar.gz -C /usr/local
 #设置免密登录
 ENV MYSQL_USER demo
 ENV MYSQL_PASSWORD 123456
-ENV MYSQL_ROOT_PASSWORD demo
+ENV MYSQL_ROOT_PASSWORD 123456
 #将所需文件放到容器中
 COPY setup.sh /mysql/setup.sh
 COPY schema.sql /mysql/schema.sql
